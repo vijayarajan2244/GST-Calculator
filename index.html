@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>JavaScript DOM</title>
+
+  <!--Link Css file-->
+  <link rel="stylesheet" href="/style.css">
+
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="/Assets/css/bootstrap.min.css">
+
+  <!--Font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+          <div class="card-body">
+            <!--Heading-->
+            <h4 class="heading">GST CALCULATOR</h4>
+
+            <!--Cost-->
+            <label for="" class="form-label">Enter Cost</label>
+            <div class="input-group">
+              <span class="input-group-text">₹</span>
+              <input type="text" id="cost" class="form-control">
+              <p id="alertCost"></p>
+            </div>
+
+            <!--GST-->
+            <label for="" class="form-label mt-4">Enter GST Rate %</label>
+            <div class="input-group">
+              <span class="input-group-text">%</span>
+              <input type="text" id="gst" class="form-control">
+            </div>
+
+            <!--GST + COST-->
+            <label for="" class="form-label mt-4">(Additional Cost for GST%)</label>
+            <div class="input-group">
+              <span class="input-group-text">₹</span>
+              <input type="text" id="gc" class="form-control">
+            </div>
+
+            <!--Total-->
+            <label for="" class="form-label mt-4">Total</label>
+            <div class="input-group">
+              <span class="input-group-text">₹</span>
+              <input type="text" id="total" class="form-control">
+            </div>
+
+            
+            <div class="row">
+              <!--Calculate Button-->
+              <div class="col-md-8">
+                <button class="btn btn-primary d-grid col-md-12 ms-2 mt-4 " onclick="f()">Calculate</button>
+              </div>
+              <!--Clear Button-->
+              <div class="col-md-4">
+                <button class="btn btn-dark d-grid col-md-8 ms-4 mt-4" onclick="c()">Clear</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+</div>
+ 
+  
+  <script src="/index.js"></script>
+  <script src="/Assets/js/jquery.min.js"></script>
+  <script src="/Assets/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
